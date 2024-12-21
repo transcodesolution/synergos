@@ -1,16 +1,19 @@
 import '@mantine/core/styles.css';
+import '@mantine/core/styles.layer.css';
+
 import type { Metadata } from "next";
 import { Catamaran } from "next/font/google";
 import { ColorSchemeScript, mantineHtmlProps, MantineProvider } from "@mantine/core";
 import { theme } from '@/theme';
 
-import '@/lib/styles/global.scss'
+import '@/lib/styles/global.scss';
+import Header from '@/lib/components/layouts/header';
+import Footer from '@/lib/components/layouts/footer';
 
 const catamaranSans = Catamaran({
   variable: "--font-catamaran-sans",
   subsets: ["latin"],
 });
-
 
 export const metadata: Metadata = {
   title: "Synergos",
@@ -32,7 +35,11 @@ export default function RootLayout({
         />
       </head>
       <body className={catamaranSans.variable}>
-        <MantineProvider theme={theme}>{children}</MantineProvider>
+        <MantineProvider theme={theme}>
+          <Header />
+          <main className='banner-wrapper'>{children}</main>
+          <Footer />
+        </MantineProvider>
       </body>
     </html>
   );
