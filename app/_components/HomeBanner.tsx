@@ -1,11 +1,11 @@
 import React from 'react';
 import { Container, Grid, GridCol, Title, Text, Button } from "@mantine/core";
 import Image from "next/image";
-import bannerImg from '../../assets/images/home_banner_img.png';
+import bannerImg from '../../lib/assets/images/home_banner_img.png';
 
 const HomeBanner = () => {
     return (
-        <Container size='lg'>
+        <Container size='xl'>
             <Grid
                 align="center"
                 justify="space-between"

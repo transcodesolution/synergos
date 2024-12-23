@@ -21,7 +21,7 @@ const WorkshopSection = () => {
     };
 
     return (
-        <Container size="lg" py="20px" pt='40px'>
+        <Container size="xl" py="20px" pt='40px'>
             <Title order={1} fw={700}>
                 Blijf geinspireerd
             </Title>

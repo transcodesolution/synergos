@@ -17,15 +17,17 @@ export default function Header() {
                 <Flex bg='theme-orange' justify='center' align='center' py='xs' px={{ md: 'xs', sm: '0' }}>
                     <Text c="white" p='0' fw={400}>Open dag Haptonomie op 12-06-2025 in Amersfoort.</Text>
                 </Flex>
-                <Container size='lg' py='sm'>
+                <Container size='xl' py='sm'>
                     <Flex align='center' justify='space-between' hiddenFrom='md'>
-                        <Image src={logo} alt="Synergos Logo" width={220} height={72} />
+                        <Link href="/">
+                            <Image src={logo} alt="Synergos Logo" width={221} height={72} />
+                        </Link>
                         <Button onClick={toggle} variant="outline" color="white" >Menu</Button>
                     </Flex>
                     <Stack visibleFrom='md'>
                         <Flex align='center' justify='space-between' >
                             <Text c="white" opacity='50%' size="md" fw={400}>033-4638817 | ma - vrij 10:00 - 16:00 </Text>
-                            <TextInput bg='white'
+                            <TextInput
                                 placeholder="Zoeken..."
                                 rightSection={<IconSearch size={16} />}
                                 w={360}
@@ -38,23 +40,25 @@ export default function Header() {
                             </Flex>
                         </Flex>
                         <Flex pb='xs' align='center' justify='space-between'>
-                            <Image src={logo} alt="Synergos Logo" width={220} height={72} />
-                            <Link href="/opleidingen" passHref>
+                            <Link href="/">
+                                <Image src={logo} alt="Synergos Logo" width={220} height={72} />
+                            </Link>
+                            <Link href="/opleidingen">
                                 <Text c="white" fw='800'>Opleidingen</Text>
                             </Link>
-                            <Link href="/nascholing" passHref>
+                            <Link href="/nascholing">
                                 <Text c="white" fw='800'>Nascholing</Text>
                             </Link>
-                            <Link href="/workshops" passHref>
+                            <Link href="/workshops">
                                 <Text c="white" fw='800'>Workshops</Text>
                             </Link>
-                            <Link href="/agenda" passHref>
+                            <Link href="/agenda">
                                 <Text c="white" fw='800'>Agenda</Text>
                             </Link>
-                            <Link href="/webinars" passHref>
+                            <Link href="/webinars">
                                 <Text c="white" fw='800'>Webinars</Text>
                             </Link>
-                            <Button variant="outline" color="white">Mijn Synergos</Button>
+                            <Button variant="outline" color="white" >Mijn Synergos</Button>
                         </Flex>
                     </Stack>
 
@@ -79,13 +83,13 @@ export default function Header() {
                     <Text c='theme-black' fw='800'>Workshops</Text>
                     <Text c='theme-black' fw='800'>Agenda</Text>
                     <Text c='theme-black' fw='800'>Webinars</Text>
-                    <Button variant="outline" c='black'>Mijn Synergos</Button>
+                    <Button variant="outline" color='theme-black.2'>Mijn Synergos</Button>
 
                     <Text c="theme-black.3" opacity='50%' fw={400}>Opleidingen</Text>
                     <Text c="theme-black.3" opacity='50%' fw={400}>Nascholing</Text>
                     <Text c="theme-black.3" opacity='50%' fw={400}>Workshops</Text>
                 </Flex>
             </Drawer>
-        </AppShell>
+        </AppShell >
     );
 }

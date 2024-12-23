@@ -1,5 +1,5 @@
 import '@mantine/core/styles.css';
-import '@mantine/core/styles.layer.css';
+// import '@mantine/core/styles.layer.css';
 
 import type { Metadata } from "next";
 import { Catamaran } from "next/font/google";

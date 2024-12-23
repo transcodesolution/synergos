@@ -1,7 +1,7 @@
 import { Button, Container, Grid, GridCol, Text, Box, Title, Flex } from "@mantine/core";
 import Image from "next/image";
 import React from "react";
-import cardImage1 from '../../assets/images/card_image_1.png'
+import cardImage1 from '../../lib/assets/images/card_image_1.png'
 import { IconStarFilled } from "@tabler/icons-react";
 
 const courses = [
@@ -33,7 +33,7 @@ const courses = [
 
 export const CoursesSection = () => (
     <Box mt={50} bg='theme-orange.0' pt='sm' pb='lg'>
-        <Container size="lg" >
+        <Container size="xl" >
             <Text c='theme-black.2' fw={400} size="30px" mb={20} lh='50px' >
                 Help mensen beter in contact te komen met zichzelf en anderen . <br />
                 Ontdek hoe je mensen kunt begeleiden in een bewuster en voller leven
@@ -58,7 +58,6 @@ export const CoursesSection = () => (
                         <Button color="theme-blue" mt="md" c="white" w='auto' radius={0}>
                             Bekijk opleiding
                         </Button>
-                        {/* </Card> */}
                     </GridCol>
                 ))}
             </Grid>
