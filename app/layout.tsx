@@ -9,6 +9,8 @@ import { theme } from '@/theme';
 import '@/lib/styles/global.scss';
 import Header from '@/lib/components/layouts/header';
 import Footer from '@/lib/components/layouts/footer';
+import AssociationsSection from './_components/AssociationsSection';
+import IntroductionSection from './_components/IntroductionSection';
 
 const catamaranSans = Catamaran({
   variable: "--font-catamaran-sans",
@@ -38,6 +40,8 @@ export default function RootLayout({
         <MantineProvider theme={theme}>
           <Header />
           <main className='banner-wrapper'>{children}</main>
+          <AssociationsSection />
+          <IntroductionSection />
           <Footer />
         </MantineProvider>
       </body>
