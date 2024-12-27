@@ -34,7 +34,7 @@ const courses = [
 export const CoursesSection = () => (
     <Box mt={50} bg='theme-orange.0' pt='sm' pb='lg'>
         <Container size="xl" >
-            <Text c='theme-black.2' fw={400} size="30px" mb={20} lh='50px' >
+            <Text c='theme-black.2' fw={400} size='1.875rem' mb={20} lh='3.125rem' >
                 Help mensen beter in contact te komen met zichzelf en anderen . <br />
                 Ontdek hoe je mensen kunt begeleiden in een bewuster en voller leven
             </Text>
@@ -42,7 +42,7 @@ export const CoursesSection = () => (
             <Grid gutter={{ base: "xl", md: "lg", lg: "36" }}>
                 {courses.map((course, index) => (
                     <GridCol span={{ base: 12, lg: 4 }} key={index} p={20}>
-                        <Title c="theme-black.2" order={3} lineClamp={2} h="60px">{course.title}</Title>
+                        <Title c="theme-black.2" order={3} lineClamp={2} h={{ base: 'auto', md: "60px" }}>{course.title}</Title>
                         <Text c="theme-black.2" my='sm' size="16px">{course.subTitle}</Text>
                         <Flex align='center' gap='sm' mb='md'>
                             <IconStarFilled color="#ED6E37" size={24} />

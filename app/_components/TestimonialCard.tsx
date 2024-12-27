@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Text, Flex } from '@mantine/core';
+import { Box, Text, Flex, Grid, GridCol } from '@mantine/core';
 import { IconStarFilled } from '@tabler/icons-react';
 import testimonalImg from '../../lib/assets/images/testimonalImg.png'
 import Image from 'next/image';
@@ -30,12 +30,17 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ name, profession, rat
                 {renderStars(rating)}
                 <Text size="24px" c="theme-black.2">({rating})</Text>
             </Flex>
-            <Flex gap='lg'>
-                <Image alt='testimonalImg' src={testimonalImg} width={132} height={132} />
-                <Text lh="35px" c="theme-black.2" size="16px" >
-                    “{testimonial}”
-                </Text>
-            </Flex>
+            <Grid>
+                <GridCol span={{ base: 12, lg: 1.5, sm: 2 }}>
+                    <Image alt='testimonalImg' src={testimonalImg} width={132} height={132} />
+                </GridCol>
+                <GridCol span={{ base: 12, lg: 10.5, sm: 10.8 }}>
+
+                    <Text lh="35px" c="theme-black.2" size="16px" >
+                        “{testimonial}”
+                    </Text>
+                </GridCol>
+            </Grid>
         </Box>
     );
 };

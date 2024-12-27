@@ -6,7 +6,7 @@ const IntroductionSection = () => {
     return (
         <>
             <Box bg='theme-orange.0' pos='relative'>
-                <Container size='xl' w='100%'>
+                <Container size='xl' p={{ base: '0', md: 'auto' }} w='100%'>
                     <ColorfulLine />
                 </Container>
                 <Container size='xl' pt='33px' pb='50px'>

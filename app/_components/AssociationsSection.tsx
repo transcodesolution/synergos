@@ -15,16 +15,16 @@ const AssociationsSection = () => {
                 Verbonden aan de volgende beroepsverenigingen
             </Title>
             <Grid align='center'>
-                <GridCol span={3} >
+                <GridCol span={{ base: 6, md: 3 }} >
                     <Image src={assocVvhLog} alt='VVH' width={256} height={80} />
                 </GridCol>
-                <GridCol span={3} >
+                <GridCol span={{ base: 6, md: 3 }} >
                     <Image src={assocTransparentLogo} alt='NVPA' width={161} height={86} />
                 </GridCol>
-                <GridCol span={3} >
+                <GridCol span={{ base: 6, md: 3 }} >
                     <Image src={assocNederlandenLogo} alt='Nederlandse' width={108} height={80} />
                 </GridCol>
-                <GridCol span={3} >
+                <GridCol span={{ base: 6, md: 3 }} >
                     <Image src={assocVhzbLogo} alt='VHZB' width={200} height={80} />
                 </GridCol>
             </Grid>

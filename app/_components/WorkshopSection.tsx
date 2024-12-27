@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Text, Button, Table, Title, Flex, TableTbody, TableTr, TableTd } from '@mantine/core';
+import { Container, Text, Button, Table, Title, Flex, TableTbody, TableTr, TableTd, ScrollArea } from '@mantine/core';
 
 const workshops = [
     { date: '17 jan 2025', title: 'Nascholin Adem', time: '10:00 - 17:30', location: 'Amersfoort' },
@@ -21,29 +21,31 @@ const WorkshopSection = () => {
     };
 
     return (
-        <Container size="xl" py="20px" pt='40px'>
+        <Container size="xl" py="20px" pt={{ base: '20px', md: '40px' }}>
             <Title order={1} fw={700}>
                 Blijf geinspireerd
             </Title>
             <Text size="24px" c='theme-black-2' mb='30px'>
                 Workshop & nascholing
             </Text>
-            <Text size="sm" mb="20px" w='820px'>
+            <Text size="sm" mb="20px" w={{ base: 'auto', md: '820px' }}>
                 Bijscholing in haptonomie houdt je als professional scherp en up-to-date met nieuwe inzichten en technieken. Het biedt de kans om je vaardigheden verder te verdiepen, nieuwe benaderingen te ontdekken, en effectiever in te spelen op de behoeften van je cliënten. Zo blijf je groeien in je vak en versterk je je impact als haptonoom.
             </Text>
-            <Table verticalSpacing='lg' withRowBorders={true} borderColor='theme-black.0' >
-                <TableTbody>
-                    {workshops.map((workshop, index) => (
-                        <TableTr key={index}>
-                            <TableTd>{formatDate(workshop.date)}</TableTd>
-                            <TableTd><Text size="24px" fw={700}>{workshop.title}</Text></TableTd>
-                            <TableTd><Text size="md" fw={700}>{workshop.time}</Text></TableTd>
-                            <TableTd><Text size="sm" fw={400}>{workshop.location}</Text></TableTd>
-                            <TableTd><Button radius={0} size="sm" color='theme-blue'>Bekijk</Button></TableTd>
-                        </TableTr >
-                    ))}
-                </TableTbody >
-            </Table >
+            <ScrollArea w='100%' type="always" offsetScrollbars >
+                <Table verticalSpacing='lg' withRowBorders={true} striped borderColor='theme-black.0' >
+                    <TableTbody>
+                        {workshops.map((workshop, index) => (
+                            <TableTr key={index}>
+                                <TableTd>{formatDate(workshop.date)}</TableTd>
+                                <TableTd><Text size="24px" fw={700}>{workshop.title}</Text></TableTd>
+                                <TableTd><Text size="md" fw={700}>{workshop.time}</Text></TableTd>
+                                <TableTd><Text size="sm" fw={400}>{workshop.location}</Text></TableTd>
+                                <TableTd><Button radius={0} size="sm" color='theme-blue'>Bekijk</Button></TableTd>
+                            </TableTr >
+                        ))}
+                    </TableTbody >
+                </Table >
+            </ScrollArea>
             <Button color='theme-blue' radius={0} style={{ marginTop: '20px' }}>Bekijk de Bijscholingsmogelijkheden</Button>
         </Container >
     );
