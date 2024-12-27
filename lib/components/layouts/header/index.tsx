@@ -15,12 +15,12 @@ export default function Header() {
         <AppShell>
             <AppShell.Header bg='theme-black'> {/* Main header color */}
                 <Flex bg='theme-orange' justify='center' align='center' py='xs' px={{ md: 'xs', sm: '0' }}>
-                    <Text c="white" p='0' fw={400}>Open dag Haptonomie op 12-06-2025 in Amersfoort.</Text>
+                    <Text c="white" fw={400} >Open dag Haptonomie op 12-06-2025 in Amersfoort.</Text>
                 </Flex>
                 <Container size='xl' py='sm'>
                     <Flex align='center' justify='space-between' hiddenFrom='md'>
                         <Link href="/">
-                            <Image src={logo} alt="Synergos Logo" width={221} height={72} />
+                            <Image src={logo} alt="Synergos Logo" width={100} height={33} />
                         </Link>
                         <Button onClick={toggle} variant="outline" color="white" >Menu</Button>
                     </Flex>
@@ -43,7 +43,7 @@ export default function Header() {
                             <Link href="/">
                                 <Image src={logo} alt="Synergos Logo" width={221} height={72} />
                             </Link>
-                            <Link href="/opleidingen">
+                            <Link href="/education">
                                 <Text c="white" fw='800'>Opleidingen</Text>
                             </Link>
                             <Link href="/nascholing">
