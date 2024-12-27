@@ -41,7 +41,7 @@ export default function Header() {
                         </Flex>
                         <Flex pb='xs' align='center' justify='space-between'>
                             <Link href="/">
-                                <Image src={logo} alt="Synergos Logo" width={220} height={72} />
+                                <Image src={logo} alt="Synergos Logo" width={221} height={72} />
                             </Link>
                             <Link href="/education">
                                 <Text c="white" fw='800'>Opleidingen</Text>

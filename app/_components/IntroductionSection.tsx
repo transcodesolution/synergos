@@ -5,7 +5,7 @@ import ColorfulLine from './ColorfulLine';
 const IntroductionSection = () => {
     return (
         <Box bg='theme-orange.0' pos='relative'>
-            <Container size='xl' w='100%'>
+            <Container size='xl' w='100%' p={{ base: '0', md: 'auto' }}>
                 <ColorfulLine />
             </Container>
             <Container size='xl' className='section_Divider'>

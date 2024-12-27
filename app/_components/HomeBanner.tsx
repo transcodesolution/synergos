@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Grid, GridCol, Title, Text, Button, Stack, Box, Flex } from "@mantine/core";
+import { Container, Title, Text, Button, Stack, Box, Flex } from "@mantine/core";
 import Image from "next/image";
 import bannerImg from '../../lib/assets/images/home_banner_img.png';
 

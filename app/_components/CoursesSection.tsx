@@ -2,7 +2,6 @@ import { Button, Container, Grid, GridCol, Text, Box, Title, Flex, rem } from "@
 import Image from "next/image";
 import React from "react";
 import cardImage1 from '../../lib/assets/images/card_image_1.png'
-import { IconStarFilled } from "@tabler/icons-react";
 import Rating from "@/lib/components/custom/ratting";
 import { getPosts } from "@/lib/web-api/post/get-posts";
 
@@ -43,7 +42,7 @@ export const CoursesSection = async () => {
             </Title>
 
             <Grid gutter={{ base: "xl", md: "lg", lg: "36" }} >
-                {posts.splice(0,3).map((course, index) => (
+                {posts.splice(0, 3).map((course, index) => (
                     <GridCol span={{ base: 12, lg: 4 }} key={index} >
                         <Title c="theme-black.2" mb='sm' order={3} lineClamp={2} mih={rem(80)}>{course.title}</Title>
                         <Text c="theme-black.2" mb='sm' size="16px">{course.title}</Text>
