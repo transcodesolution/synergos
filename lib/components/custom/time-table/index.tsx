@@ -24,18 +24,33 @@ export default function TimeTable({ rows }: ITimeTable) {
     };
 
     return (
-        <Table verticalSpacing='lg' withRowBorders={true} borderColor='theme-black.0' >
+        <Table verticalSpacing="md" withRowBorders >
             <TableTbody>
                 {rows.map((workshop, index) => (
-                    <TableTr key={index}>
-                        <TableTd pl={0}>{formatDate(workshop.date)}</TableTd>
-                        <TableTd><Text size="24px" fw={700}>{workshop.title}</Text></TableTd>
-                        <TableTd><Text size="md" fw={700}>{workshop.time}</Text></TableTd>
-                        <TableTd><Text size="sm" fw={400}>{workshop.location}</Text></TableTd>
-                        <TableTd align='right' pr={0}><Button size="sm" color='theme-blue'>Bekijk</Button></TableTd>
-                    </TableTr >
+                    <TableTr
+                        key={index}
+                        className="table-custom-row"
+                    >
+                        <TableTd style={{ whiteSpace: 'nowrap' }} >
+                            {formatDate(workshop.date)}
+                        </TableTd>
+                        <TableTd >
+                            <Text size="24px" fw={700} lineClamp={2}>{workshop.title}</Text>
+                        </TableTd>
+                        <TableTd align='center'>
+                            <Text size="md" fw={700} style={{ whiteSpace: 'normal', wordWrap: 'break-word' }}>
+                                {workshop.time}
+                            </Text>
+                        </TableTd>
+                        <TableTd align='center' >
+                            <Text size="sm" fw={400}>{workshop.location}</Text>
+                        </TableTd>
+                        <TableTd style={{ whiteSpace: 'nowrap' }} align="right" >
+                            <Button size="sm" color="theme-blue">Bekijk</Button>
+                        </TableTd>
+                    </TableTr>
                 ))}
-            </TableTbody >
+            </TableTbody>
         </Table>
     )
 }
