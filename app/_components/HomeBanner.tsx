@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Title, Text, Button, Stack, Box, Flex } from "@mantine/core";
 import Image from "next/image";
-import bannerImg from '../../lib/assets/images/home_banner_img.png';
 
 const HomeBanner = () => {
     return (
@@ -17,7 +16,7 @@ const HomeBanner = () => {
                     </Box>
                     <Button size='lg' fw={700} color="theme-blue">Download opleidingsbrochure</Button>
                 </Stack>
-                <Image src={bannerImg} alt="Haptonomy" className="" height={407} width={726} objectFit='contain' style={{ flex: 3 }} />
+                <Image src='/images/home_banner.png' alt="Haptonomy" className="" height={407} width={726} objectFit=' contain' style={{ flex: 3 }} />
             </Flex>
         </Container>
     );

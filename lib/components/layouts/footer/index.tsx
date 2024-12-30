@@ -3,11 +3,6 @@ import { Container, Text, Box, GridCol, Grid, Group, Stack } from '@mantine/core
 import { IconBrandWhatsappFilled } from '@tabler/icons-react';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '../../../assets/images/logo.png'
-import nrtoLogo from '../../../assets/images/ft_nrto_logo.png'
-import faceBookIcon from '../../../assets/images/facebookIcon.png'
-import linkdInIcon from '../../../assets/images/linkdinIcon.png'
-import instaIcon from '../../../assets/images/instaIcon.png'
 
 const Footer = () => {
     return (
@@ -16,7 +11,7 @@ const Footer = () => {
                 <Grid>
                     <GridCol span={{ base: 12, md: 4 }}>
                         <Link href="/">
-                            <Image src={logo} alt="Synergos Logo" width={221} height={72} />
+                            <Image src='/images/site-logo.png' alt="Synergos Logo" width={221} height={72} />
                         </Link>
                         <Text c='white' mt={35} size="md">Regentesselaan 21</Text>
                         <Text c='white' size="md">3818HH Amersfoort</Text>
@@ -55,12 +50,12 @@ const Footer = () => {
                         <Text c='white' size='sm'>Volg ons op:</Text>
                         <Group mt='md' mb='lg'>
                             <IconBrandWhatsappFilled size={46} color='white' />
-                            <Image src={linkdInIcon} alt="Logo" width={42} height={42} />
-                            <Image src={faceBookIcon} alt="Logo" width={42} height={42} />
-                            <Image src={instaIcon} alt="Logo" width={44} height={44} />
+                            <Image src='/images/Icons/linkedIn.png' alt="Logo" width={42} height={42} />
+                            <Image src='/images/Icons/facebook.png' alt="Logo" width={42} height={42} />
+                            <Image src='/images/Icons/instagram.png' alt="Logo" width={44} height={44} />
                         </Group>
                         <Text c='white' size="sm" mb={35}>2024 © Synergos</Text>
-                        <Image src={nrtoLogo} alt="NRTO Logo" width={251} height={85} />
+                        <Image src='/images/Icons/nrto.png' alt="NRTO Logo" width={251} height={85} />
                     </GridCol>
                 </Grid>
 

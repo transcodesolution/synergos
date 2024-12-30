@@ -1,9 +1,5 @@
 import React from 'react';
 import { Container, Title, Grid, GridCol, Box } from '@mantine/core';
-import assocVvhLog from '../../lib/assets/images/assoc_vvh_logo.png'
-import assocNederlandenLogo from '../../lib/assets/images/assoc_nederland_logo.png'
-import assocTransparentLogo from '../../lib/assets/images/assoc_transparent_logo.png'
-import assocVhzbLogo from '../../lib/assets/images/assoc_vhzb_logo.png'
 import Image from 'next/image';
 
 
@@ -17,16 +13,16 @@ const AssociationsSection = () => {
                 </Title>
                 <Grid align='center'>
                     <GridCol span={3} >
-                        <Image src={assocVvhLog} alt='VVH' width={256} height={80} />
+                        <Image src='/images/associationsIcons/vvh.png' alt='VVH' width={256} height={80} />
                     </GridCol>
                     <GridCol span={3} >
-                        <Image src={assocTransparentLogo} alt='NVPA' width={161} height={86} />
+                        <Image src='/images/associationsIcons/transparent.png' alt='NVPA' width={161} height={86} />
                     </GridCol>
                     <GridCol span={3} >
-                        <Image src={assocNederlandenLogo} alt='Nederlandse' width={108} height={80} />
+                        <Image src='/images/associationsIcons/nederland.png' alt='Nederlandse' width={108} height={80} />
                     </GridCol>
                     <GridCol span={3} >
-                        <Image src={assocVhzbLogo} alt='VHZB' width={200} height={80} />
+                        <Image src='/images/associationsIcons/vhzb.png' alt='VHZB' width={200} height={80} />
                     </GridCol>
                 </Grid>
             </Box>
