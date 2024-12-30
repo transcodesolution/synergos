@@ -4,7 +4,7 @@ import React from 'react';
 import { Container, TextInput, Button, Text, AppShell, Flex, Drawer, Stack } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import Image from 'next/image';
-import logo from '../../../assets/images/site-logo.png'
+// import logo from '../../../assets/images/site-logo.png'
 import { IconSearch, IconSquareRoundedX } from '@tabler/icons-react';
 import Link from 'next/link';
 
@@ -20,7 +20,7 @@ export default function Header() {
                 <Container size='xl' py='sm'>
                     <Flex align='center' justify='space-between' hiddenFrom='md'>
                         <Link href="/">
-                            <Image src={logo} alt="Synergos Logo" width={100} height={33} />
+                            <Image src='/images/site-logo.png' alt="Synergos Logo" width={100} height={33} />
                         </Link>
                         <Button onClick={toggle} variant="outline" color="white" >Menu</Button>
                     </Flex>
@@ -41,7 +41,7 @@ export default function Header() {
                         </Flex>
                         <Flex pb='xs' align='center' justify='space-between'>
                             <Link href="/">
-                                <Image src={logo} alt="Synergos Logo" width={220} height={72} />
+                                <Image src='/images/site-logo.png' alt="Synergos Logo" width={221} height={72} />
                             </Link>
                             <Link href="/education">
                                 <Text c="white" fw='800'>Opleidingen</Text>
