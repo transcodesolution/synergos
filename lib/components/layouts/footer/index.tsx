@@ -9,7 +9,7 @@ const Footer = () => {
         <Box bg='theme-black.2'>
             <Container size='xl' pt='33px' pb='60px'>
                 <Grid>
-                    <GridCol span={{ base: 12, md: 4 }}>
+                    <GridCol span={{ base: 12, md: 4, lg: 4 }}>
                         <Link href="/">
                             <Image src='/images/site-logo.png' alt="Synergos Logo" width={221} height={72} />
                         </Link>
@@ -18,7 +18,7 @@ const Footer = () => {
                         <Text c='white' size="md">033-4638817 | info@synergos.nl</Text>
                         <Text c='white' mt={35} size="md">KvK: 87549673</Text>
                     </GridCol>
-                    <GridCol span={{ base: 12, md: 4 }}>
+                    <GridCol span={{ base: 12, md: 4, lg: 5 }}>
                         <Link href="/">
                             <Text size="md" c="white">NRTO-algemene voorwaarden</Text>
                         </Link>
@@ -46,10 +46,10 @@ const Footer = () => {
                             </Link>
                         </Stack>
                     </GridCol>
-                    <GridCol span={{ base: 12, md: 4 }}>
+                    <GridCol span={{ base: 12, md: 4, lg: 3 }} >
                         <Text c='white' size='sm'>Volg ons op:</Text>
-                        <Group mt='md' mb='lg'>
-                            <IconBrandWhatsappFilled size={46} color='white' />
+                        <Group mt='md' mb='lg' gap={25}>
+                            <IconBrandWhatsappFilled size={50} color='white' />
                             <Image src='/images/Icons/linkedIn.png' alt="Logo" width={42} height={42} />
                             <Image src='/images/Icons/facebook.png' alt="Logo" width={42} height={42} />
                             <Image src='/images/Icons/instagram.png' alt="Logo" width={44} height={44} />
