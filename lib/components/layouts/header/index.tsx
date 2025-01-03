@@ -71,7 +71,7 @@ export default function Header() {
                 padding="md"
                 size="md"
                 closeButtonProps={{
-                    icon: <IconSquareRoundedX size={24} />,
+                    icon: <IconSquareRoundedX size={28} />,
                 }}
 
                 position='right'
